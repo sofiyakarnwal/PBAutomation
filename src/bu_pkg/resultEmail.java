@@ -45,7 +45,7 @@ public class resultEmail {
 		   });
 		   
 		   String to = "sofiya@policybazaar.com";
-		   //String cc= "qa119test@gmail.com , saurabhss@policybazaar.com";
+		   String cc= "qa119test@gmail.com , sofiya.karnwal@gmail.com";
 		   
 		   String from = userName;
 		   String subject = testCaseName;
@@ -55,7 +55,7 @@ public class resultEmail {
 		    {
 		      msg.setFrom(new InternetAddress(from));
 		      msg.setRecipients(Message.RecipientType.TO , InternetAddress.parse(to, false));
-		     // msg.setRecipients(Message.RecipientType.CC , InternetAddress.parse(cc, false));
+		      msg.setRecipients(Message.RecipientType.CC , InternetAddress.parse(cc, false));
 		      msg.setSubject(subject);
 		      msg.setText(message.toString());
 		           
