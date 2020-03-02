@@ -1,0 +1,23 @@
+Hi
+
+Tested URL: https://www.policybazaar.com/life-insurance/
+URL after Redirection: https://www.policybazaar.com/life-insurance/
+Life Insurance Form is not working: Test Fail
+
+Tested URL: https://www.policybazaar.com/life-insurance/investment-plans/
+URL after Redirection: https://investmentlife.policybazaar.com/quote?enquiryId=MjA0OTMzNzE1&leadId=MTc3Nzk3NTgx&IsMatrixLeadCreated=true&home=true&iscom=1&utm_content=BU
+Investment Form is working : Test Pass
+
+Tested URL: https://www.policybazaar.com/motor-insurance/car-insurance/
+URL after Redirection: https://ci.policybazaar.com/question?regid=REwwOUM2NzY3&lmobileno=&s=1&iscom=1&seovisit=NDcyMjg3NDA4&utm_term=Car_Insurance_Get_Quotes&utm_medium=BU
+Test Fail for Car and Form is not working
+
+Tested URL: https://www.policybazaar.com/motor-insurance/car-insurance/
+Tested Link: Proceed without Car number
+URL after Redirection: https://ci.policybazaar.com/question?s=1&iscom=1&utm_term=Car_Insurance_Donot_Know&utm_medium=BU&flowtype=DontKnowCarNo
+Link is working : Test Pass
+
+Tested URL: https://www.policybazaar.com/motor-insurance/car-insurance/
+Tested Link: Brand New Car?
+URL after Redirection: https://ci.policybazaar.com/question?isnew=true&iscom=1&utm_term=Car_Insurance_New_Car&utm_medium=BU&flowtype=BrandNew
+Link is working : Test Pass
