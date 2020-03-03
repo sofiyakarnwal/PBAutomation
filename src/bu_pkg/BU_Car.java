@@ -33,7 +33,7 @@ public class BU_Car {
 		String secondurl=driver.getCurrentUrl();
 		System.out.println("URL after Submit Button click is : " + secondurl);
 		 
-			if(secondurl.contains("citestfail.policybazaar.com"))
+			if(secondurl.contains("ci.policybazaar.com"))
 			 {
 				 System.out.println("Test Pass and Form is working");
 				 result="\n"+ "Tested URL: "+ url+ "\n"+ "URL after Redirection: "+ secondurl+ "\n"+ "Car Form is working : Test Pass";
@@ -48,7 +48,7 @@ public class BU_Car {
 				result="\n"+ "Tested URL: "+ url+ "\n"+ "URL after Redirection: "+ secondurl+ "\n"+ "Test Fail for Car and Form is not working";
 				
 			}
-		
+			driver.quit();
 		}
 		catch(Exception exc) 
 		{
@@ -77,7 +77,7 @@ public class BU_Car {
 		 
 			if(secondurll.contains("ci.policybazaar.com"))
 			 {
-				 System.out.println("Test Pass and Link is working");
+				 System.out.println("Test Pass and 'Proceed Without Car Number' Link is working");
 				 WithoutCarNumResult="\n"+ "Tested URL: "+ urll+ "\n"+ "Tested Link: Proceed without Car number"+ "\n"+ "URL after Redirection: "+ secondurll+ "\n"+ "Link is working : Test Pass";
 				 
 				 Thread.sleep(10000);
@@ -85,7 +85,7 @@ public class BU_Car {
 			 }
 			else 
 			{
-				System.out.println("Test Fail for Car and Link is not working");
+				System.out.println("Test Fail for Car and 'Proceed Without Car Number' Link is not working");
 				WithoutCarNumResult="\n"+ "Tested URL: "+ urll+ "\n"+ "Tested Link: Proceed without Car number"+ "\n"+ "URL after Redirection: "+ secondurll+ "\n"+ "Link is working : Test Fail";
 				 
 				
@@ -119,7 +119,7 @@ public class BU_Car {
 		 
 			if(secondurlll.contains("ci.policybazaar.com"))
 			 {
-				 System.out.println("Test Pass and Link is working");
+				 System.out.println("Test Pass and 'I have a brand new car' Link is working");
 				 NewCarResult="\n"+ "Tested URL: "+ urlll+ "\n"+ "Tested Link: Brand New Car?"+ "\n"+ "URL after Redirection: "+ secondurlll+ "\n"+ "Link is working : Test Pass";
 					
 				 Thread.sleep(10000);
@@ -127,7 +127,7 @@ public class BU_Car {
 			 }
 			else 
 			{
-				System.out.println(" Test Fail for Car and Link is not working");
+				System.out.println(" Test Fail for Car and 'I have a brand new car' Link is not working");
 				NewCarResult="\n"+ "Tested URL: "+ urlll+ "\n"+ "Tested Link: Brand New Car?"+ "\n"+ "URL after Redirection: "+ secondurlll+ "\n"+ "Link is working : Test Fail";
 				
 			}

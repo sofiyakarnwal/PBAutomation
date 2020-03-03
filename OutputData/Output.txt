@@ -1,15 +1,15 @@
-Hi
+BU Forms Reoprt
 
 Tested URL: https://www.policybazaar.com/life-insurance/
-URL after Redirection: https://www.policybazaar.com/life-insurance/
-Life Insurance Form is not working: Test Fail
+URL after Redirection: https://termlife.policybazaar.com/quotes/MjA1ODAxNTU5?refId=MjA1ODAxNTU5&isProgressiveJourney=true&isMobileDefault=true&iscom=1&payType=1&page=1
+Life Insurance Form is working : Test Pass
 
 Tested URL: https://www.policybazaar.com/life-insurance/investment-plans/
-URL after Redirection: https://investmentlife.policybazaar.com/quote?enquiryId=MjA0OTMzNzE1&leadId=MTc3Nzk3NTgx&IsMatrixLeadCreated=true&home=true&iscom=1&utm_content=BU
+URL after Redirection: https://investmentlife.policybazaar.com/quote?enquiryId=MjA1ODAxODc1&leadId=MTc4NDc3OTU0&IsMatrixLeadCreated=true&home=true&iscom=1&utm_content=BU
 Investment Form is working : Test Pass
 
 Tested URL: https://www.policybazaar.com/motor-insurance/car-insurance/
-URL after Redirection: https://ci.policybazaar.com/question?regid=REwwOUM2NzY3&lmobileno=&s=1&iscom=1&seovisit=NDcyMjg3NDA4&utm_term=Car_Insurance_Get_Quotes&utm_medium=BU
+URL after Redirection: https://ci.policybazaar.com/question?regid=REwwOUM2NzY3&lmobileno=&s=1&iscom=1&seovisit=NDc0NDExMDYz&utm_term=Car_Insurance_Get_Quotes&utm_medium=BU
 Test Fail for Car and Form is not working
 
 Tested URL: https://www.policybazaar.com/motor-insurance/car-insurance/
@@ -21,3 +21,24 @@ Tested URL: https://www.policybazaar.com/motor-insurance/car-insurance/
 Tested Link: Brand New Car?
 URL after Redirection: https://ci.policybazaar.com/question?isnew=true&iscom=1&utm_term=Car_Insurance_New_Car&utm_medium=BU&flowtype=BrandNew
 Link is working : Test Pass
+
+Tested URL: https://www.policybazaar.com/motor-insurance/two-wheeler-insurance/
+URL after Redirection: https://twowheeler.policybazaar.com/question?regNo=DL09C6167&utm_term=Bike_Insurance_Get_Quotes&utm_medium=BU&iscom=1
+Two Wheeler Form is working : Test Pass
+
+Tested URL: https://www.policybazaar.com/motor-insurance/two-wheeler-insurance/
+Tested Link: Proceed without bike number
+URL after Redirection: https://twowheeler.policybazaar.com/question?regNo=&iscom=1&utm_term=Bike_Insurance_Donot_Know&utm_medium=BU
+Link is working : Test Pass
+
+Tested URL: https://www.policybazaar.com/motor-insurance/two-wheeler-insurance/
+Tested Link: Brand New Bike?
+URL after Redirection: https://twowheeler.policybazaar.com/question?regNo=&PolicyType=3&iscom=1&utm_term=Bike_Insurance_New_Bike&utm_medium=BU
+Link is working : Test Pass
+
+Tested URL: https://www.policybazaar.com/claim/
+Message after Submission:  Your ticket no. is PB55670104, our representative will get in touch with you shortly.
+Claim Form is working: Test Pass
+null
+null
+null

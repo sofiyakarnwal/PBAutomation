@@ -28,7 +28,7 @@ public class BU_page {
 		String Life=buLife.LifeBU();
 		System.out.println(Life);
 		
-		StringBuilder result= new StringBuilder("BU Forms Reoprt\n");
+		StringBuilder result= new StringBuilder("BU Forms Report\n");
 		result.append(Life);
 		
 			
