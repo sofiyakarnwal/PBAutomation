@@ -3,9 +3,9 @@ package bu_pkg;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.PasswordAuthentication;
+//import javax.mail.Message;
+//import javax.mail.MessagingException;
+//import javax.mail.PasswordAuthentication;
 
 //import java.util.*;
 
@@ -21,7 +21,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.support.ui.Select;
-//import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 //import sun.net.smtp.SmtpClient;
 
@@ -35,7 +35,7 @@ public class BU_Life {
 	
 	String url="https://www.policybazaar.com/life-insurance/";
 	
-
+@Test(priority=1)
 	public String LifeBU()
 	{
 		try

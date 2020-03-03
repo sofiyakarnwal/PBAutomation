@@ -60,7 +60,7 @@ public class BU_page {
 		result.append("\n" +Ci);*/
 		
 		// For Car Insurance				
-		BU_Car bucar=new BU_Car();
+		/*BU_Car bucar=new BU_Car();
 		String Car=bucar.CarBU();
 		System.out.println(Car);
 		result.append("\n" +Car);
@@ -68,7 +68,7 @@ public class BU_page {
 		String CarBULinks=bucar.CarBULinks();
 		result.append("\n" +CarBULinks);
 		String NewCarBULinks=bucar.NewCarBULinks();
-		result.append("\n" +NewCarBULinks);
+		result.append("\n" +NewCarBULinks);*/
 		
 		BU_Tw butw=new BU_Tw();
 		String TW=butw.TwBU();

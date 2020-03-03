@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class BU_Car {
 	
@@ -13,7 +14,9 @@ public class BU_Car {
 	 String result;
 	 String WithoutCarNumResult;
 	 String NewCarResult;
-	public String CarBU()
+	 
+	@Test(priority=1) 
+	public void CarBU()
 	{
 		try
 		{
@@ -54,9 +57,11 @@ public class BU_Car {
 		{
 			exc.printStackTrace();
 		}
-		return(result);
+		//return(result);
 	}
-	public String CarBULinks()
+	
+	@Test(priority=2)
+	public void CarBULinks()
 	{
 		try
 		{
@@ -96,9 +101,11 @@ public class BU_Car {
 		{
 			exc.printStackTrace();
 		}
-		return(WithoutCarNumResult);
+		//return(WithoutCarNumResult);
 	}
-	public String NewCarBULinks()
+	
+	@Test(priority=3)
+	public void NewCarBULinks()
 	{
 		try
 		{
@@ -137,7 +144,7 @@ public class BU_Car {
 		{
 			exc.printStackTrace();
 		}
-		return(NewCarResult);
+		//return(NewCarResult);
 	}
 	
 }
