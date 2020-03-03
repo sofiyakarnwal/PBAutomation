@@ -24,6 +24,7 @@ public class BU_page {
 		resultEmail remail=new resultEmail();
 		
 		// For Life Insurance
+		
 		BU_Life buLife = new BU_Life();
 		String Life=buLife.LifeBU();
 		System.out.println(Life);
@@ -31,13 +32,14 @@ public class BU_page {
 		StringBuilder result= new StringBuilder("BU Forms Report\n");
 		result.append(Life);
 		
-			
+		
 		
 		/*Article_Life LifeArt=new Article_Life();
 		String ArticleLife=LifeArt.ArtLife();
 		result.append(ArticleLife);*/
 		
 		// For Investment
+		
 		BU_Investment buInvest= new BU_Investment();
 		String Investment=buInvest.InvestmentBU();
 		System.out.println(Investment);
@@ -46,8 +48,8 @@ public class BU_page {
 		
 		
 					
-		/*//For Health
-		BU_Health buHealth=new BU_Health();
+		
+		/* BU_Health buHealth=new BU_Health();
 		String Health=buHealth.HealthBU();
 		System.out.println(Health);
 		result.append("\n" +Health);
@@ -82,7 +84,6 @@ public class BU_page {
 		String Claim=claim.ClaimReq();
 		//System.out.println(Claim);
 		result.append("\n" +Claim);
-		
 		
 		BU_Travel buTravel=new BU_Travel();
 		String Travel=buTravel.TravelBU();

@@ -49,7 +49,7 @@ public class BU_Travel {
 		    	break;
 		    }
 		}
-		
+		Thread.sleep(3000);
 		driver .findElement(By.id("memage1")).click();
 		driver.findElement(By.id("memage1")).sendKeys("25");
 		//driver .findElement(By.id("memage2")).click();
@@ -62,9 +62,9 @@ public class BU_Travel {
 		for(WebElement SDoption : sDate_td)
 		{
 			System.out.println(SDoption.getText());
-			System.out.println(SDoption.getText().equals("1"));
+			System.out.println(SDoption.getText().equals("25"));
 			
-		    if(SDoption.getText().equals("1")) 
+		    if(SDoption.getText().equals("25")) 
 		    {
 		    	//System.out.println("Trying to select: "+textToSelect);
 		    	SDoption.click();
@@ -206,9 +206,9 @@ public class BU_Travel {
 		for(WebElement SDoption : sDate_td)
 		{
 			System.out.println(SDoption.getText());
-			System.out.println(SDoption.getText().equals("1"));
+			System.out.println(SDoption.getText().equals("25"));
 			
-		    if(SDoption.getText().equals("1")) 
+		    if(SDoption.getText().equals("25")) 
 		    {
 		    	//System.out.println("Trying to select: "+textToSelect);
 		    	SDoption.click();
@@ -351,9 +351,9 @@ public class BU_Travel {
 		for(WebElement SDoption : sDate_td)
 		{
 			System.out.println(SDoption.getText());
-			System.out.println(SDoption.getText().equals("1"));
+			System.out.println(SDoption.getText().equals("25"));
 			
-		    if(SDoption.getText().equals("1")) 
+		    if(SDoption.getText().equals("28")) 
 		    {
 		    	//System.out.println("Trying to select: "+textToSelect);
 		    	SDoption.click();
