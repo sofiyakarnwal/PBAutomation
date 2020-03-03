@@ -1,7 +1,10 @@
 package bu_pkg;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BU_Tw {
@@ -14,8 +17,11 @@ public class BU_Tw {
 	{
 		try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+			
 		String url="https://www.policybazaar.com/motor-insurance/two-wheeler-insurance/";
 		driver.get(url);
 		String firsturl=driver.getCurrentUrl();
@@ -42,7 +48,7 @@ public class BU_Tw {
 				
 				//remail.sendEmail("Two Wheeler Form is not working: Test Fail", "Form Testing");
 			}
-		
+			driver.quit();
 		}
 		catch(Exception exc) 
 		{
@@ -54,8 +60,11 @@ public class BU_Tw {
 	{
 		try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+			
 		String urll="https://www.policybazaar.com/motor-insurance/two-wheeler-insurance/";
 		driver.get(urll);
 		String firsturll=driver.getCurrentUrl();
@@ -78,7 +87,7 @@ public class BU_Tw {
 				System.out.println("Test Fail for TW and Link is not working");
 				WithoutBikeNumResult="\n"+ "Tested URL: "+ urll+ "\n"+ "Tested Link: Proceed without bike number"+ "\n"+ "URL after Redirection: "+ secondurll+ "\n"+ "Link is not working : Test Fail";
 			}
-		
+			driver.quit();
 		}
 		catch(Exception exc) 
 		{
@@ -92,8 +101,11 @@ public class BU_Tw {
 	{
 		try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+			
 		String urll="https://www.policybazaar.com/motor-insurance/two-wheeler-insurance/";
 		driver.get(urll);
 		String firsturll=driver.getCurrentUrl();
@@ -116,7 +128,7 @@ public class BU_Tw {
 				System.out.println(" Test Fail for New TW and Link is not working");
 				NewBikeResult="\n"+ "Tested URL: "+ urll+ "\n"+ "Tested Link: Brand New Bike?"+ "\n"+ "URL after Redirection: "+ secondurll+ "\n"+ "Link is not working : Test Fail";
 			}
-		
+			driver.quit();
 		}
 		catch(Exception exc) 
 		{

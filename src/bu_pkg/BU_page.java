@@ -23,10 +23,6 @@ public class BU_page {
 		
 		resultEmail remail=new resultEmail();
 		
-       
-		
-		
-		
 		// For Life Insurance
 		BU_Life buLife = new BU_Life();
 		String Life=buLife.LifeBU();
@@ -72,18 +68,7 @@ public class BU_page {
 		String NewCarBULinks=bucar.NewCarBULinks();
 		result.append("\n" +NewCarBULinks);
 		
-		// Try to write output in a text file
-		    String TestFile="./OutputData/Output.txt";
-			File FC=new File(TestFile);
-			FC.createNewFile();
-			
-			FileWriter FW= new FileWriter(TestFile);
-			BufferedWriter BW=new BufferedWriter(FW);
-			BW.append(result);
-			
-			BW.close();
-		  
-	/*	BU_Tw butw=new BU_Tw();
+		BU_Tw butw=new BU_Tw();
 		String TW=butw.TwBU();
 		//System.out.println(TW);
 		result.append("\n" +TW);
@@ -92,10 +77,6 @@ public class BU_page {
 		String NewTWBULinks=butw.NewTwBULinks();
 		result.append("\n" +NewTWBULinks);
 		
-		BU_GroupInsurance buGroup= new BU_GroupInsurance();
-		String Sme=buGroup.SmeBU();
-		System.out.println(Sme);
-		result.append("\n" +Sme);
 		
 		Claim claim=new Claim();
 		String Claim=claim.ClaimReq();
@@ -109,7 +90,6 @@ public class BU_page {
 		result.append("\n" +Travel);
 		
 		
-		
 		BU_Travel GrpBuTravel= new BU_Travel();
 		String GrpTravel= GrpBuTravel.GrpTravelBU();
 		System.out.println(GrpTravel);
@@ -118,7 +98,27 @@ public class BU_page {
 		BU_Travel StudTravelBU= new BU_Travel();
 		String StudTravel= StudTravelBU.StudentTravelBU();
 		System.out.println(StudTravel);
-		result.append("\n" +StudTravel);*/
+		result.append("\n" +StudTravel);
+		
+		// Try to write output in a text file
+		    String TestFile="./OutputData/Output.txt";
+			File FC=new File(TestFile);
+			FC.createNewFile();
+			
+			FileWriter FW= new FileWriter(TestFile);
+			BufferedWriter BW=new BufferedWriter(FW);
+			BW.append(result);
+			
+			BW.close();
+		  
+	/*	
+		
+		BU_GroupInsurance buGroup= new BU_GroupInsurance();
+		String Sme=buGroup.SmeBU();
+		System.out.println(Sme);
+		result.append("\n" +Sme);
+		
+		*/
 		
 		/*
 		BU_GroupInsurance buGroup= new BU_GroupInsurance();

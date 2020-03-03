@@ -1,9 +1,12 @@
 package bu_pkg;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -16,8 +19,11 @@ public class Claim {
 		
 	try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+		
 		String url="https://www.policybazaar.com/claim/";
 		driver.get(url);
 		String firsturl=driver.getCurrentUrl();
@@ -50,6 +56,7 @@ public class Claim {
 	    	 result="\n"+ "Tested URL: "+ url+ "\n"+ "Message after Submission "+ text+ "\n"+ "Claim Form is not working: Test Fail";
 		// remail.sendEmail("Claim Form is not working: Test Fail", "Form Testing");
 	     }
+		 driver.quit();
 		}
 		catch(Exception exc) 
 		{
@@ -65,8 +72,11 @@ public class Claim {
 			
 			try
 				{
-				System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-				WebDriver driver= new FirefoxDriver();	
+				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+				WebDriver driver=new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+				
 				String url="https://www.policybazaar.com/health-insurance-claim/";
 				driver.get(url);
 				String firsturl=driver.getCurrentUrl();
@@ -100,7 +110,7 @@ public class Claim {
 				 //remail.sendEmail("Health Claim Form is not working: Test Fail", "Form Testing");
 			     }
 				
-				
+				driver.quit();
 				
 				}
 			catch(Exception exc) 
@@ -116,8 +126,11 @@ public class Claim {
 			
 			try
 				{
-				System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-				WebDriver driver= new FirefoxDriver();	
+				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+				WebDriver driver=new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+				
 				String url="https://www.policybazaar.com/car-insurance-claim/";
 				driver.get(url);
 				String firsturl=driver.getCurrentUrl();
@@ -147,7 +160,7 @@ public class Claim {
 				 
 			     }
 				
-				
+				driver.quit();
 				
 				}
 			catch(Exception exc) 

@@ -6,7 +6,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class BU_Travel {
@@ -18,8 +19,10 @@ public class BU_Travel {
 	{
 		try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.manage().window().maximize();
+					
 		String url="https://www.policybazaar.com/travel-insurance/";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(url);
@@ -128,6 +131,7 @@ public class BU_Travel {
 			System.out.println("Test Fail");
 			result="\n"+ "Tested URL: "+ url+ "\n"+ "URL after Redirection: "+ secondurl+ "\n"+ "Travel Form for Family/Self is not working: Test Fail" ;
 		}
+		driver.quit();
 		}
 		
 		catch(Exception exc) 
@@ -145,8 +149,11 @@ public class BU_Travel {
 	{
 		try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+			
 		String urll="https://www.policybazaar.com/travel-insurance/";
 		driver.get(urll);
 		String firsturll=driver.getCurrentUrl();
@@ -268,6 +275,7 @@ public class BU_Travel {
 			System.out.println("Test Fail");
 			GrpResult="\n"+ "Tested URL: "+ urll+ "\n"+ "URL after Redirection: "+ secondurll+ "\n"+ "Travel Form for Group/Friends is not working: Test Fail" ;
 		}
+		driver.quit();
 		}
 		
 		catch(Exception exc) 
@@ -286,8 +294,11 @@ public class BU_Travel {
 	{
 		try
 		{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();	
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			WebDriver driver=new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);	
+			
 		String urll="https://www.policybazaar.com/travel-insurance/";
 		driver.get(urll);
 		String firsturll=driver.getCurrentUrl();
@@ -410,6 +421,7 @@ public class BU_Travel {
 			System.out.println("Test Fail");
 			StudResult="\n"+ "Tested URL: "+ urll+ "\n"+ "URL after Redirection: "+ secondurll+ "\n"+ "Travel Form for Students is not working: Test Fail" ;
 		}
+		driver.quit();
 		}
 		
 		catch(Exception exc) 

@@ -31,6 +31,7 @@ public class resultEmail {
 		props.put("mail.smtp.ssl.enable", "true");
 		props.put("mail.smtp.host", "smtp.gmail.com");
 		props.put("mail.smtp.port", "465");
+		//props.put("mail.smtp.port", "587");
 		props.put("mail.smtp.user", userName);
 	    props.put("mail.smtp.password", pwd);
 			    
